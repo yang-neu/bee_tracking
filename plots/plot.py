@@ -11,9 +11,9 @@ from PIL import Image, ImageDraw, ImageFont
 from utils.func import FR1, FR2, SQ
 from utils.paths import TRACK_DIR, IMG_DIR, POS_DIR, PLOTS_DIR
 
-WIDTH = 2
-BEE_COL = (255, 0, 0, 200)
-OTHER_BEE_COL = (255, 255, 0, 200)
+WIDTH = 4 
+BEE_COL = (0, 255, 0, 200)
+OTHER_BEE_COL = (255, 0, 0, 200)
 
 ###########################################
 

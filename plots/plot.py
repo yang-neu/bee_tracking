@@ -200,7 +200,7 @@ def plot_all_trajectories(fps=10):
 ##################################################################
 
 
-def plot_detections(fr, save, fps=10):
+def plot_detections(fr, save, fps=30):
     if save:
         if not os.path.exists(PLOTS_DIR):
             os.mkdir(PLOTS_DIR)
@@ -220,7 +220,7 @@ def plot_detections(fr, save, fps=10):
     fsize = 20
     (x, y), s = time_text(img, np.array([]), fr, fps, fsize)
     fnt = ImageFont.truetype('plots/arial.ttf', fsize)
-    draw.text((x, y), s, font=fnt, fill=(255, 0, 0, 255))
+    draw.text((x, y), s, font=fnt, fill=(0, 255, 0, 255))
 
     if save:
         img.save(os.path.join(PLOTS_DIR, "%06d.png" % fr))
